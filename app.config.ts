@@ -30,7 +30,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
 
   android: {
-    // ✅ bump this integer for each store build
+    jsEngine:"jsc",
+    
     versionCode: 7,
     package: "com.sohailforreal.quotament",
     adaptiveIcon: {
