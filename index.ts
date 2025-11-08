@@ -1,8 +1,10 @@
 // index.ts
-import { registerRootComponent } from "expo";
 import { registerWidgetTaskHandler } from "react-native-android-widget";
-import App from "expo-router/entry";
+// Boot the app via expo-router (side-effect import; DO NOT register it yourself)
+import "expo-router/entry";
+
+// Your widget task handler
 import { widgetTaskHandler } from "./widget/widget-task-handler";
 
-registerRootComponent(App);
+// Register only the widget handler
 registerWidgetTaskHandler(widgetTaskHandler);
