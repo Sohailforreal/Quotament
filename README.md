@@ -1,50 +1,49 @@
-# Welcome to your Expo app 👋
+# 🌿 Quotament
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A minimal and elegant **React Native (Expo)** app that generates 5–6 word motivational quotes using **Google Gemini API**.  
+Built completely on mobile 💚 (Termux + Expo Go).
 
-## Get started
+---
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+-  Generates short, inspiring quotes (5–6 words only)
+-  Powered by **Gemini AI**
+-  One-tap **copy** with smooth toast feedback
+-  Clean dark UI with simple, modern layout
+-  Auto-detects working Gemini model for your API key
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Tech Stack 
 
-In the output, you'll find options to open the app in a
+| Category | Technology |
+|-----------|-------------|
+| Framework | React Native + Expo |
+| API | Google Gemini (Generative Language API) |
+| State Mgmt | React Hooks |
+| UI | Native Components + Animated Toast |
+| Platform | Termux (Android) + Expo Go |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📱 Screenshots
 
-## Get a fresh project
+_Add a screenshot of your app here later_  
+(e.g. `/assets/screenshot1.jpg`)
 
-When you're ready, run:
+---
+
+## 🚀 Getting Started
+
+1️⃣ **Clone this repository**
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/Sohailforreal/Quotament.git
+cd Quotament
+npm install
+npx expo start -c
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+✨ Built with ❤️ by Mohammed Sohail Shaikh  
+📱 Powered entirely from Termux + Expo Go
