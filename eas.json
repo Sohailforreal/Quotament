@@ -1,0 +1,7 @@
+{
+  "cli": { "version": ">= 12.0.0", "appVersionSource": "remote" },
+  "build": {
+    "preview": { "android": { "buildType": "apk" }, "autoIncrement": true },
+    "production": { "android": { "gradleCommand": ":app:bundleRelease" }, "autoIncrement": true }
+  }
+}

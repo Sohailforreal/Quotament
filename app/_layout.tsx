@@ -1,4 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
+// index.js
+import "./widget/QuoteWidget";
 import {
   View,
   Text,

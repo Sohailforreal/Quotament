@@ -5,7 +5,13 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: "Quotament",
   slug: "quotament",
+
+  // ✅ runtime version policy (disables fingerprint policy)
+  runtimeVersion: { policy: "appVersion" },
+
+  // ✅ keep this in sync and bump when you want a new runtime
   version: "1.0.0",
+
   orientation: "portrait",
   icon: "./assets/images/splash-icon.jpg",
   scheme: "qapp",
@@ -15,13 +21,18 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   extra: {
     ...config.extra,
     GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+    eas: { projectId: "23ecef94-e742-40b7-847a-55db106e8ac4" },
   },
 
   ios: {
     supportsTablet: true,
+    bundleIdentifier: "com.sohailforreal.quotament",
   },
 
   android: {
+    // ✅ bump this integer for each store build
+    versionCode: 7,
+    package: "com.sohailforreal.quotament",
     adaptiveIcon: {
       backgroundColor: "#E6F4FE",
       foregroundImage: "./assets/images/android-icon-foreground.png",
@@ -46,9 +57,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
         imageWidth: 200,
         resizeMode: "contain",
         backgroundColor: "#ffffff",
-        dark: {
-          backgroundColor: "#000000",
-        },
+        dark: { backgroundColor: "#000000" },
       },
     ],
   ],
