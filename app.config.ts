@@ -47,20 +47,36 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     output: "static",
     favicon: "./assets/images/favicon.png",
   },
-
-  plugins: [
-    "expo-router",
-    [
-      "expo-splash-screen",
-      {
-        image: "./assets/images/splash-icon.png",
-        imageWidth: 200,
-        resizeMode: "contain",
-        backgroundColor: "#ffffff",
-        dark: { backgroundColor: "#000000" },
-      },
-    ],
+plugins: [
+  "expo-router",
+  [
+    "react-native-android-widget",
+    {
+      widgets: [
+        {
+          name: "QuoteWidget",
+          label: "Quotament Widget",
+          description: "Generate and copy tiny quotes",
+          minWidth: "220dp",
+          minHeight: "120dp",
+          previewImage: "./assets/widget-preview/quote.png",
+          updatePeriodMillis: 0
+        }
+      ]
+    }
   ],
+  [
+    "expo-splash-screen",
+    {
+      image: "./assets/images/splash-icon.png",
+      imageWidth: 200,
+      resizeMode: "contain",
+      backgroundColor: "#ffffff",
+      dark: { backgroundColor: "#000000" }
+    }
+  ]
+],
+  
 
   experiments: {
     typedRoutes: true,

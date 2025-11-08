@@ -1,4 +1,5 @@
 // widgets/QuoteWidget.tsx
+import "react-native-android-widget";
 import { AppRegistry } from "react-native";
 import {
   defineWidget,
@@ -46,13 +47,7 @@ export const QuoteWidget = defineWidget(WIDGET_NAME, ({ state }) => {
 
   return (
     <Column padding={10} background="#11161d">
-      <TextView
-        id="quote"
-        text={quote}
-        textColor="#e8eaed"
-        textSize={14}
-        maxLines={3}
-      />
+      <TextView id="quote" text={quote} textColor="#e8eaed" textSize={14} maxLines={3} />
       <Row marginTop={6} gravity="center">
         <TextView
           id="btnGen"
@@ -91,4 +86,4 @@ onReceive(WIDGET_NAME, async (action, context) => {
 });
 
 // Register once
-AppRegistry.registerComponent(WIDGET_NAME, () => QuoteWidget);
+AppRegistry.registerComponent("QuoteWidget", () => QuoteWidget);
