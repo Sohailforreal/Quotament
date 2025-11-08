@@ -27,12 +27,7 @@ Built completely on mobile 💚 (Termux + Expo Go).
 
 ---
 
-## 📱 Screenshots
 
-_Add a screenshot of your app here later_  
-(e.g. `/assets/screenshot1.jpg`)
-
----
 
 ## 🚀 Getting Started
 
